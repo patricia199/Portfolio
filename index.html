@@ -4,80 +4,82 @@
         <meta charset="UTF-8"/>
         <title>Patricia Web</title>
         <link rel="icon" type="images.png" href="Favicon-paty.png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="estilos.css">
-        <style>
-            header{
-                background: gainsboro;
-            }
-        </style>
     </head>
     <body>
 <!--Esto es mi Menu-->        
-        <header style="color: rgb(44, 57, 80);background: rgb(67, 179, 179);">
+        <header class="header">
             <br>
-            <figure>
+            <figure class="logo">
                 <img src="Favicon-paty.png" alt="Logo por cambiar">
             </figure>
-            <nav>
+            <nav class="menu">
                 <ol>
                     <li>
-                        <a href="#portafolio">Portafolio</a>
+                        <a class="link" href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#eventos">Experiencia</a>
+                        <a class="link" href="#eventos">Experiencia</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a class="link" href="#">Blog</a>
                     </li>
                     <li>
-                        <a href="#contacto">Contáctame</a>
+                        <a class="link" href="#contacto">Contáctame</a>
                     </li>
                 </ol>
             </nav><br>
         </header>
 <!--Secciones de mi Website-->
-        <section>
+        <section class="hero">
             <h1>
                 Hola! Soy <strong>Patricia Benito</strong> , <br>diseñadora y apasionada de <br>la creatividad
             </h1>
             <img src="ilu-Recuperado.jpg" width="250" height="250" alt="Imagen principal del sitio">
         </section>
-        <section id="portafolio">
+        <section id="portafolio" class="portfolio">
             <h2> Portafolio (Proyectos Destacados)</h2>
-            <article>
-                <h3>Usabilidad</h3>
-                <h6>Adobe XD / Photoshop</h6>
-                <p><small><strong>Fecha:</strong> 01/07/21</small></p>
-                <p><small><strong>Puedes verlo en:</strong> www.patricia.com</small></p>
-                <p>Donec sollicitudin arcu eu urna lacinia malesuada. Nulla imperdiet pellentesque hendrerit. Suspendisse potenti. Donec tempus, urna blandit auctor ullamcorper, sapien nibh varius purus, in gravida elit nunc a diam. Ut vel neque tempor augue porta facilisis at vel mauris. Donec vel leo mi. Aenean quis fringilla nisl. Cras malesuada eros vitae dolor facilisis, malesuada luctus augue tempor. Integer vitae odio nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi nisl, sagittis ut ex eget, porttitor tincidunt ex. Aliquam tristique, felis at feugiat finibus, enim magna 
+            <article class="project">
+                <h3 class="project-title">Usabilidad</h3>
+                <h6 class="project-course">Adobe XD / Photoshop</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 01/07/21</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong> www.patricia.com</small></p>
+                <p class="project-text">Donec sollicitudin arcu eu urna lacinia malesuada. Nulla imperdiet pellentesque hendrerit. Suspendisse potenti. Donec tempus, urna blandit auctor ullamcorper, sapien nibh varius purus, in gravida elit nunc a diam. Ut vel neque tempor augue porta facilisis at vel mauris. Donec vel leo mi. Aenean quis fringilla nisl. Cras malesuada eros vitae dolor facilisis, malesuada luctus augue tempor. Integer vitae odio nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi nisl, sagittis ut ex eget, porttitor tincidunt ex. Aliquam tristique, felis at feugiat finibus, enim magna 
                    scelerisque elit, venenatis tincidunt massa metus id 
                    sapien. Etiam maximus ipsum in placerat luctus.</p>
-                <figure>
-                    <img src="Portada 2.jpg" width="350" height="350" alt="Woman Trip"/>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="Portada 2.jpg" width="350" height="350" alt="Woman Trip"/>
                 </figure>
             </article>
         </section>
         <section id="eventos">
             <h2>Más sobre mi Experiencia</h2>
-            <article>
-                <h3>Cómo crear un Design Sprint</h3>
-                <p>La forma mas facil de saber si tu negocio fracasará
+            <article class="event">
+                <h3 class="event-title">Cómo crear un Design Sprint</h3>
+                <p class="event-text">La forma mas facil de saber si tu negocio fracasará
                     o triunfará
                 </p>
-                <img src="infografia-LINKEDIN05-01.jpg" width="100" height="350">
-                <br>
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="infografia-LINKEDIN05-01.jpg" width="100" height="350">
+                </figure> <br>
                 <a target="_blank" href="https://patriciabenitodona.wixsite.com/misitio-1/post/design-sprint-dise%C3%B1ando-para-una-causa">Ver más</a>
             </article>
         </section>
-        <section id="contacto">
-            <form action="suscripción">
+        <section id="contacto" class="contact">
+            <form action="suscripción" class="form-email">
                 <h3>¿Creamos algo juntos?</h3><br>
                 <input type="text" placeholder=" Your Email" id="email">
                 <input type="submit" value="Texto de botón">
                 <button>Send</button>
             </form>
         </section>
-        <section>Footer</section>
+        <section>
+            <footer class="footer">
+                Footer
+            </footer>
+        </section>
     </body>  
 </html>
 
