@@ -1,0 +1,112 @@
+/*reglas 
+selectores 
+declaraciones 
+propiedades 
+valores*/
+
+header{
+    background: rgb(240, 204, 229);
+    color: blue;
+}
+
+/* selector de etiqueta  ...ej: header-section-article-nav....*/
+
+/* selector descendente*/
+/*body header nav ol li a {}*/
+
+/*selector no descendente--se le aplica el estilo
+o cambio a todos los selectores*/
+/*h1,h2,h3*/
+
+
+/* selector de clase  .  =  .portfolio o .link*/
+/* selector de id  # =  #portfolio o #link*/
+
+
+
+body{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:'Fjalla One', sans-serif;
+    font-weight: normal;
+   /* font-style: italic;*/
+}
+
+/*Salto de línea*/
+
+h1{
+    font-size: 40px;
+    line-height:1.5em;
+    letter-spacing:normal;
+    text-transform:uppercase;
+    text-decoration:dashed;
+    color: mintcream;
+    margin: 100px 300px 70px 2px;
+}
+/*Instalar un color piker / color snaper, es un gotero que te ayuda a ver que colores hay 
+por internet */
+
+/*HEADER*/
+.header{
+    background-color:rebeccapurple;
+    color: white;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Presentacion importante ../ se sale de la carpeta para coger archivos*/
+.hero{
+    height: 300px;
+    background-image: url("../ilu-Recuperado.jpg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: midnightblue;
+}
+
+h1 strong{
+    color: orchid;
+}
+
+
+/*Mis proyectos*/
+.project{
+    /*como funciona los bordes = tamaño tipo estilo*/
+   /* border-top: 10px solid royalblue;
+    border-right: 10px solid coral;
+    border-bottom: 10px solid cadetblue;
+    border-left: 10px solid brown;*/
+  /* border-color: beige;*/
+  /*  border-top-color: blueviolet;
+    border-top-width: 9px;
+    border-top-style: solid; */
+    border-radius: 10px;
+    border:1px solid gray;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 30px;
+    margin:10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: khaki;
+}
+
+.project-details{
+    width: 500px;
+
+}
+
+.project-imageContainer{
+    width: 500px;
+    
+}
