@@ -4,11 +4,6 @@ declaraciones
 propiedades 
 valores*/
 
-header{
-    background: rgb(240, 204, 229);
-    color: blue;
-}
-
 /* selector de etiqueta  ...ej: header-section-article-nav....*/
 
 /* selector descendente*/
@@ -25,7 +20,7 @@ o cambio a todos los selectores*/
 
 
 body{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
 
@@ -51,6 +46,23 @@ h1{
     color: mintcream;
     margin: 100px 300px 70px 2px;
 }
+
+h1 strong{
+    color: teal;
+}
+
+h2{
+    color: teal;
+    text-transform: uppercase;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+figure{
+    margin: 0;
+}
 /*Instalar un color piker / color snaper, es un gotero que te ayuda a ver que colores hay 
 por internet */
 
@@ -58,15 +70,45 @@ por internet */
 .header{
     background-color:rebeccapurple;
     color: white;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.menu{
+    height: inherit;
+}
+
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+header ol li{
+    height: inherit;
 }
 
 .header a{
     color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
     
 }
 
+ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    height: inherit;
+}
 
 /*Presentacion importante ../ se sale de la carpeta para coger archivos*/
 .hero{
@@ -76,6 +118,9 @@ por internet */
     background-repeat: no-repeat;
     background-position-x: right;
     background-color: midnightblue;
+    display: flex;
+    margin: 0;
+    align-items: center;
 }
 
 h1 strong{
@@ -86,6 +131,7 @@ h1 strong{
 /*Mis proyectos*/
 .portfolio{
     background:whitesmoke;
+    padding: 20px;
 }
 .project{
     /*como funciona los bordes = tamaño tipo estilo*/
@@ -96,17 +142,39 @@ h1 strong{
   /* border-color: beige;*/
   /*  border-top-color: blueviolet;
     border-top-width: 9px;
-    border-top-style: solid; */
+    border-top-style: solid; 
+     box-sizing: border-box;
+    */
     border-radius: 10px;
     border:1px solid gray;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 30px;
-    margin:10px;
+    /*border-top-left-radius: 30px;
+    border-top-right-radius: 30px;*/
     margin-bottom: 15px;
     padding:20px;
-    background: khaki;
-    box-sizing: border-box;
+    background: rgb(248, 248, 243);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
+}
+.project-course,
+.project-date
+.project-url{
+    margin: 10px 0;
+}
+
+.project-text{
+    font-size: 16px;
+
+}
+.project-title{
+    font-size: 30px;
+    margin: 10px 0;
+
+}
+
+.project strong{
+    font-family:'Fjalla One', sans-serif;
 }
 
 .project-details{
@@ -118,6 +186,55 @@ h1 strong{
     width: 500px;
     display:inline-block;   
 }
+
+/*LOS EVENTOS*/
+
+.event-father{
+    display: flex;
+}
+.event-encabezado{
+    margin-left: 20px;
+}
+
+.event{
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.event a{
+    border: 1px solid;
+    padding:  5px 20px;
+    text-decoration: none;
+    color: blue;
+    border-radius: 15px;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.event-detail{
+    margin:20px 40px;
+    background-color: violet;
+    margin-top: -70px;
+    position: relative;
+    padding: 20px;
+    text-align:center;
+}
+
+.event-text{
+    text-align: left;
+}
+
+
+
 
 .flexbox{
     display: flex;
@@ -138,4 +255,13 @@ h1 strong{
 /*Evita que las cajas de flex se deformen, pero en consecuencia te da un scroll
 bastante grande*/
     flex-shrink: 0;
+}
+
+.footer{
+    background-color: lightcoral;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
