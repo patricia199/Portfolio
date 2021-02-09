@@ -191,6 +191,7 @@ h1 strong{
 
 .event-father{
     display: flex;
+    flex-wrap: wrap;
 }
 .event-encabezado{
     margin-left: 20px;
@@ -233,8 +234,45 @@ h1 strong{
     text-align: left;
 }
 
+/*AREA DE CONTACTOS*/
+.contact{
+    background-color: rgb(36, 39, 228);
+    color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
 
-
+.social a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    margin: 0px 10px;
+       
+}
+.social-red{
+    background-image: url();     
+}
+.form-email{
+    margin: 20px;
+}
+.form-email input{
+    border-color: yellowgreen;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.form-email button{
+    display:block;
+    background: transparent;
+    color: white;
+    padding: 5px 0;
+    border-radius: 10px;
+    width: 100px;
+    margin: 10px auto 0;
+    border:1px solid white ;
+}
 
 .flexbox{
     display: flex;
