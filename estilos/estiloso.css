@@ -76,6 +76,17 @@ por internet */
     align-items: center;
 }
 
+
+
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    
+}
 .menu{
     height: inherit;
 }
@@ -88,16 +99,6 @@ por internet */
 
 header ol li{
     height: inherit;
-}
-
-.header a{
-    color: white;
-    text-decoration: none;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    
 }
 
 ol,ul{
