@@ -8,101 +8,18 @@
     <title>Proyectos Lemoncode</title>
 </head>
 <body>
-    <main class="hotel_container">
-        <h2 class="title">Listado de Hoteles</h2>
-        <div class="hotel_card">
-            <div class="hotel_header">
-                <h2 class="hotel_title"> Hotel Balmoral</h2>
-            </div>
-
-            <div class="hotel_body">
-                <span class="hotel_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        natus ducimus corporis earum, animi quia minus.</span>
-            </div>
-
-            <div class="hotel_tlf">
-                <span>+34 555-789-456</span>
-            </div>
-            <div class="hotel_footer">
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                
-            </div>
+    <div class="container">
+        <img class="container_imagen" src="013-newsletter_a1023c3e-defc-4af7-8010-9172411f135f.png" alt="Cohete">
+        <div class="text_input">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" class="label_input"/>
         </div>
-
-        <div class="hotel_card">
-            <div class="hotel_header">
-                <h2 class="hotel_title"> Hotel Acapulco</h2>
-            </div>
-
-            <div class="hotel_body">
-                <span class="hotel_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        natus ducimus corporis earum, animi quia minus.</span>
-            </div>
-
-            <div class="hotel_tlf">
-                <span>+34 555-456-123</span>
-            </div>
-            <div class="hotel_footer">
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                
-            </div>
+        <div class="text_input">
+            <label for="last_name">Last Name:</label><br>
+            <input type="text" id="last_name" class="label_input"/>
         </div>
-
-        <div class="hotel_card">
-            <div class="hotel_header">
-                <h2 class="hotel_title"> Hotel Bellmonte</h2>
-            </div>
-
-            <div class="hotel_body">
-                <span class="hotel_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        natus ducimus corporis earum, animi quia minus.</span>
-            </div>
-
-            <div class="hotel_tlf">
-                <span>+34 555-256-839</span>
-            </div>
-            <div class="hotel_footer">
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                
-            </div>
-        </div>
-
-        <div class="hotel_card">
-            <div class="hotel_header">
-                <h2 class="hotel_title"> Hotel Valença</h2>
-            </div>
-
-            <div class="hotel_body">
-                <span class="hotel_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        natus ducimus corporis earum, animi quia minus.</span>
-            </div>
-
-            <div class="hotel_tlf">
-                <span>+34 555-136-894</span>
-            </div>
-            <div class="hotel_footer">
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                <span class="icons">&#xf005;</span>
-                
-            </div>
-        </div>
-
-
-    </main>
+    
+    <button type="button" onclick="console.log(document.getElementById('name').value)" class="boton">Update</button>
+    </div>
 </body>
 </html>

@@ -1,52 +1,49 @@
 body{
-    background-color:lightslategrey;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(236, 111, 199);
 }
-
-.hotel_container{
+.container{
+    color: rgb(42, 48, 48);
+    background-color: rgb(43, 226, 89);
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;  
-    display: block; 
+    width:300px;
+    padding: 40px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 9px 9px 42px rgb(168, 94, 17);
+    display:grid;
+    place-items: center;    
 }
 
-.title{
-    text-align: center;
-    color: mintcream;
+.container_imagen{
+    max-width: 100%;
+    height: 90px;
+    margin-bottom: 20px;
 }
 
-
-.hotel_card{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: mintcream;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 9px 9px 12px rgba(122, 121, 121, 0.411);
+.text_input{
     margin-bottom: 15px;
+    width: 50%;
 }
 
-.hotel_title{
-    font-size: 29px;
-    width: 250px;
-}
-.hotel_body{
-    width: 200px;
-    height: auto;
-    font-size: 14px;
-    color: rgb(122, 121, 121);
+.label_input{
+    background-color: rgb(240, 230, 240);
+    border-radius: 50px;
+    border: none;
+    padding: 8px;
 }
 
-.hotel_tlf{
-    font-size:21px;
-    font-weight: 700;
-}
-
-.hotel_footer{
-    max-width: auto;
-}
-
-.icons{
-    background-color: transparent;
-    border: 1px solid grey;
+.boton{
+    padding: 10px 30px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    border:trasparent;
+    box-shadow: 5px 5px 32px rgb(67, 126, 92);
+    background-color: rgb(241, 141, 220);
+    color: white;
 }
