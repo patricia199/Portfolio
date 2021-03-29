@@ -4,46 +4,32 @@ body{
     place-items: center;
     margin: 0;
     font-family: sans-serif;
-    background-color: rgb(236, 111, 199);
+    background-color: rgb(255, 255, 255);
 }
+
+
+/*HOTEL DESCONOCIDO*/
+
 .container{
-    color: rgb(42, 48, 48);
-    background-color: rgb(43, 226, 89);
-    margin: auto;
-    width:300px;
-    padding: 40px;
-    height: 300px;
-    border-radius: 15px;
-    box-shadow: 9px 9px 42px rgb(168, 94, 17);
-    display:grid;
-    place-items: center;    
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.container_imagen{
-    max-width: 100%;
-    height: 90px;
-    margin-bottom: 20px;
+.container_item{
+    background-color: rgb(243, 240, 240);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.item_image{
+    min-height: 100%;
+    width: 150px;
 }
 
-.text_input{
-    margin-bottom: 15px;
-    width: 50%;
-}
-
-.label_input{
-    background-color: rgb(240, 230, 240);
-    border-radius: 50px;
-    border: none;
-    padding: 8px;
-}
-
-.boton{
-    padding: 10px 30px 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 50px;
-    border:trasparent;
-    box-shadow: 5px 5px 32px rgb(67, 126, 92);
-    background-color: rgb(241, 141, 220);
-    color: white;
+.hotel_description{
+    margin: 10px;
 }

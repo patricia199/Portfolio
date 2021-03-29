@@ -9,17 +9,24 @@
 </head>
 <body>
     <div class="container">
-        <img class="container_imagen" src="013-newsletter_a1023c3e-defc-4af7-8010-9172411f135f.png" alt="Cohete">
-        <div class="text_input">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" class="label_input"/>
+        <div class="container_item">
+          <div class="hotel_description">
+              <h3 id="nombreHotel">Hotel Desconocido</h3>
+              <span id="descriptionHotel">Descripción Desconocida</span>
+          </div>
+          <img  id="imageHotel" class ="item_image" src="" alt="">
         </div>
-        <div class="text_input">
-            <label for="last_name">Last Name:</label><br>
-            <input type="text" id="last_name" class="label_input"/>
+      
+        <div class="container_item">
+          <div hotel_description>
+              <h3  id="puntua">Puntuación: </h3>
+              <div class="selection">
+                  <label for="item1">Reseña Anónima</label>
+                  <input id="select" type="checkbox">
+              </div>
+          </div>
         </div>
-    
-    <button type="button" onclick="console.log(document.getElementById('name').value)" class="boton">Update</button>
-    </div>
+      
+      </div>
 </body>
 </html>
