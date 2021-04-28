@@ -1,0 +1,105 @@
+.first_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  place-content: center;
+  height: 100vh;
+}
+
+.first_container .containerA {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px;
+      grid-template-columns: 100px;
+  -ms-grid-rows: (75px)[5];
+      grid-template-rows: repeat(5, 75px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.first_container .containerA .tip_span_A {
+  display: block;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.first_container .containerA .box_1 {
+  background-color: red;
+  border-radius: 1px;
+}
+
+.first_container .containerA .box_2 {
+  background-color: #660000;
+  border-radius: 1px;
+}
+
+.first_container .containerA .box_3 {
+  background-color: #ffb3b3;
+  border-radius: 1px;
+}
+
+.first_container .containerA .box_4 {
+  display: block;
+  margin-top: 20px;
+}
+
+.first_container .containerA .box_4 span:nth-child(1) {
+  font-weight: initial;
+}
+
+.first_container .containerA .box_5 {
+  border: 1px solid black;
+  -webkit-box-shadow: -10px 12px 9px black;
+          box-shadow: -10px 12px 9px black;
+  border-radius: 1px;
+}
+
+.first_container .containerB {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px;
+      grid-template-columns: 100px;
+  -ms-grid-rows: (75px)[5];
+      grid-template-rows: repeat(5, 75px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.first_container .containerB .tip_span_B {
+  display: block;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.first_container .containerB .box_6 {
+  background-color: blue;
+  border-radius: 4px;
+}
+
+.first_container .containerB .box_7 {
+  background-color: #000066;
+  border-radius: 4px;
+}
+
+.first_container .containerB .box_8 {
+  background-color: #b3b3ff;
+  border-radius: 4px;
+}
+
+.first_container .containerB .box_9 {
+  display: block;
+  margin-top: 20px;
+  font-weight: initial;
+}
+
+.first_container .containerB .box_10 {
+  border: 1px solid black;
+  -webkit-box-shadow: 10px 12px 9px black;
+          box-shadow: 10px 12px 9px black;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=styles.css.map */
