@@ -1,0 +1,192 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .search {
+    display: none;
+  }
+  .header {
+    width: 100vw;
+    background-color: #141b22;
+    font-size: 8px;
+    font-style: normal;
+  }
+  .header .header_title {
+    padding: 8px;
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+  .container {
+    display: block;
+    margin: 0;
+    background-color: pink;
+    padding-bottom: 20px;
+  }
+  .container .cont_navigate {
+    width: 100vw;
+    background-color: #2a2836;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .container .cont_navigate .title_navigate {
+    display: none;
+  }
+  .container .cont_navigate .navigates {
+    color: inherit;
+    text-decoration: none;
+    background-color: #7d797e;
+    font-size: 20px;
+    padding: 6px;
+  }
+  .container .cont_navigate .navigates:hover {
+    background-color: lightcoral;
+    color: #2a2836;
+  }
+  .container .cont_images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .cont_images .box_image {
+    margin: 0 20px 3px;
+    background-color: #2c282c;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+  }
+  .container .cont_images .box_image .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 30px;
+  }
+  .footer {
+    width: 100vw;
+    background-color: #cf2296;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .footer .title_footer {
+    padding: 9px;
+    margin: 0 15px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search {
+    margin-left: 20px;
+  }
+  .header {
+    width: 100vw;
+    background-color: #141b22;
+    font-size: 10px;
+    font-style: normal;
+  }
+  .header .header_title {
+    padding: 8px;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+  }
+  .container .cont_navigate {
+    width: 30%;
+    background-color: #2a2836;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 70px (30px)[4];
+        grid-template-rows: 70px repeat(4, 30px);
+  }
+  .container .cont_navigate .title_navigate {
+    font-size: 9px;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+  }
+  .container .cont_navigate .navigates {
+    color: inherit;
+    text-decoration: none;
+    background-color: #7d797e;
+    font-size: 15px;
+    padding: 6px;
+  }
+  .container .cont_navigate .navigates:hover {
+    background-color: lightcoral;
+    color: #2a2836;
+    font-weight: 800;
+  }
+  .container .cont_images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    place-items: center;
+    place-content: center;
+  }
+  .container .cont_images .box_image {
+    margin: 9px;
+    background-color: #2c282c;
+    width: 230px;
+    height: 170px;
+    border-radius: 10px;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+  .container .cont_images .box_image .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .footer {
+    width: 100vw;
+    background-color: #cf2296;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .footer .title_footer {
+    padding: 8px;
+    margin-left: 20px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style_5.css.map */
