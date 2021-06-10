@@ -69,23 +69,10 @@ const products = [
 
 
     const titleMy = document.getElementById("title");
-    const my_input = document.getElementById("myInput");
     
-   
+  
     titleMy.innerHTML = 'Carrito de la Compra';
     titleMy.style.marginLeft = '30px';
-
-
-    const my_boton = document.createElement("button");
-    my_boton.textContent = "Calcula";
-    my_boton.style.background = '#2a9d8f'; 
-    my_boton.style.color = 'white';
-    my_boton.style.border = 'none';
-    my_boton.style.margin = '10px 0px 10px 30px';
-    my_boton.style.padding ='5px 90px 5px';
-    my_boton.addEventListener("click",tipo);
-    my_boton.addEventListener("click",givePriceIva);
-    my_boton.addEventListener("click",total);
 
 
     const subTotal = document.getElementById("subtotal");
@@ -100,25 +87,40 @@ const products = [
 
  //-----------------PROGRAMAS------------------------------------ 
     
-
+  function myList (products){
     const fragment = document.createDocumentFragment();
+    const my_input = document.getElementById("myInput");
+
       var total = 1;
-      for(pepito of products){
+      for(producto of products){
           const itemList = document.createElement('ol');
-          itemList.innerHTML = (total++ ) +"......"+ pepito.description + " - " + pepito.price + "€/ud. " + `<input type=\"text\" size=\"1\" value ="${pepito.units}">`;
+          itemList.innerHTML = (total++ ) +"......"+ producto.description + " - " + producto.price + "€/ud. " + `<input type=\"text\" size=\"1\" value ="${producto.units}">`;
           fragment.appendChild(itemList);
+          
       }
-
-
       my_input.appendChild(fragment);
-      my_input.appendChild(my_boton);   
-
+      my_input.appendChild(myTotal()); 
   
+    }
+
+
+  function myTotal (){
+    const my_boton = document.createElement("button");
+    my_boton.textContent = "Calcula";
+    my_boton.style.background = '#2a9d8f'; 
+    my_boton.style.color = 'white';
+    my_boton.style.border = 'none';
+    my_boton.style.margin = '10px 0px 10px 30px';
+    my_boton.style.padding ='5px 90px 5px';
+    my_boton.addEventListener("click",tipo());
+    my_boton.addEventListener("click",givePriceIva());
+    my_boton.addEventListener("click",total());
+  }
       
   function tipo (){
       var total = 0;
-      for(juliana of products){
-        total += (juliana.units * juliana.price);
+      for(tipe of products){
+        total += (tipe.units * tipe.price);
         document.getElementById("subtotal").innerHTML = "Subtotal :      " + total + " €";
       }
 
@@ -127,8 +129,8 @@ const products = [
 
   function givePriceIva (){
     var total = 0;
-    for(paco of products){
-      total += (1+(paco.tax/100)) * paco.units;
+    for(dameIva of products){
+      total += (1+(dameIva.tax/100)) * dameIva.units;
       document.getElementById("iva").innerHTML = "I.V.A :      " + total + " €";
     }
 
@@ -136,8 +138,8 @@ const products = [
 
   function total (){
     var total = 0;
-    for(paco of products){
-      total += (paco.units * paco.price) * ((1+(paco.tax/100)) * paco.units);
+    for(priceEnd of products){
+      total += (priceEnd.units * priceEnd.price) * ((1+(priceEnd.tax/100)) * priceEnd.units);
       document.getElementById("total").innerHTML = "Total :      " + total + " €";
     }
              
