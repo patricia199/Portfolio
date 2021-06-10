@@ -115,6 +115,7 @@ const products = [
     my_boton.addEventListener("click",tipo());
     my_boton.addEventListener("click",givePriceIva());
     my_boton.addEventListener("click",total());
+    return my_boton;
   }
       
   function tipo (){
