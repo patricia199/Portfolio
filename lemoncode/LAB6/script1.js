@@ -75,6 +75,18 @@ const products = [
     titleMy.style.marginLeft = '30px';
 
 
+    // const my_boton = document.createElement("button");
+    // my_boton.textContent = "Calcula";
+    // my_boton.style.background = '#2a9d8f'; 
+    // my_boton.style.color = 'white';
+    // my_boton.style.border = 'none';
+    // my_boton.style.margin = '10px 0px 10px 30px';
+    // my_boton.style.padding ='5px 90px 5px';
+    // my_boton.addEventListener("click",tipo);
+    // my_boton.addEventListener("click",givePriceIva);
+    // my_boton.addEventListener("click",total);
+
+
     const subTotal = document.getElementById("subtotal");
     subTotal.style.marginLeft = '30px';
 
@@ -102,6 +114,16 @@ const products = [
       my_input.appendChild(myTotal()); 
   
     }
+    
+  myList(products);  
+      
+  // var createProducts = product =>{
+  //   var input = document.createElement("input");
+  //   input.setAttribute("type", "number");
+  //   input.addEventListener("change", event => product.units = event.target.valueAsNumber);
+  //   my_input.appendChild(input);
+
+  // }
 
 
   function myTotal (){
@@ -115,6 +137,7 @@ const products = [
     my_boton.addEventListener("click",tipo());
     my_boton.addEventListener("click",givePriceIva());
     my_boton.addEventListener("click",total());
+    return my_boton;
   }
       
   function tipo (){
